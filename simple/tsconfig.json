@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "ES2022",
+        "moduleResolution": "nodenext",
+        "lib": [
+            "ES2022"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "target": "ES2022",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "typeRoots": [
+            "./types",
+            "node_modules/@types"
+        ]
+    },
+    "include": [
+        "src"
+    ]
+}

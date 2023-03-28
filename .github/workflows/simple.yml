@@ -1,0 +1,15 @@
+name: 'Simple'
+
+on:
+  push:
+    paths:
+      - '.github/workflows/simple.yml'
+      - '.github/workflows/reusable.yml'
+      - 'simple/**'
+
+jobs:
+  simple:
+    name: 'Simple'
+    uses: './.github/workflows/reusable.yml'
+    with:
+      working-directory: 'simple'

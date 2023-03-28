@@ -1,0 +1,43 @@
+{
+    "name": "typescript-esm-simple",
+    "version": "1.0.0",
+    "description": "Basic usage of ES modules in Typescript",
+    "type": "module",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shawnsparks/typescript-esm.git"
+    },
+    "keywords": [
+        "Typescript",
+        "ES",
+        "module",
+        "esm"
+    ],
+    "author": "Shawn Sparks",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/shawnsparks/typescript-esm/issues"
+    },
+    "homepage": "https://github.com/shawnsparks/typescript-esm#readme",
+    "scripts": {
+        "build": "tsc",
+        "dev": "ts-node --esm src/index.ts",
+        "start": "node dist/index.js",
+        "test": "mocha"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.3.4",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "18.15.10",
+        "chai": "^4.3.7",
+        "mocha": "^10.2.0",
+        "ts-node": "10.9.1",
+        "typescript": "5.0.2"
+    },
+    "mocha": {
+        "loader": "ts-node/esm",
+        "spec": ["test/unit/**/*.spec.ts"],
+        "timeout": 5000
+    }
+}

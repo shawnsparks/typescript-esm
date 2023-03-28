@@ -1,0 +1,15 @@
+name: 'ESM with CTS'
+
+on:
+  push:
+    paths:
+      - '.github/workflows/esm-with-cts.yml'
+      - '.github/workflows/reusable.yml'
+      - 'esm-with-cts/**'
+
+jobs:
+  esm-with-cts:
+    name: 'ESM with CTS'
+    uses: './.github/workflows/reusable.yml'
+    with:
+      working-directory: 'esm-with-cts'
